@@ -3,7 +3,7 @@
 **Proyecto 2 · Gráficas por Computadora · Diorama con raytracing en Rust**
 
 El jardín de la casa de *El mundo secreto de Arrietty* (Studio Ghibli), trazado con rayos en
-tiempo real y con estilo de fondo de anime. Hecho **solo con la librería estándar de Rust**.
+tiempo real y con estilo de fondo de anime.
 
 ## Demo en video
 
@@ -70,24 +70,6 @@ Todo el ambiente cuelga de un solo valor que va de 0 a 1, así que el cambio de 
   - **truenos** medio segundo después de cada relámpago, solo cuando llueve;
   - **pajaritos** con trinos, silbidos y gorjeos con un poco de eco, solo de día.
 
-## Rúbrica del proyecto
-
-- [x] **Escena compleja (30):** casa completa, rincón de los *borrowers*, lago con vida, kiosko,
-  bosque, personajes y animales animados; alrededor de **1.6 millones de primitivas**.
-- [x] **Atractivo visual (20):** estilo de fondo de anime, dos ambientes con transición, bloom, rayos de
-  luz, lluvia, relámpagos y sonido.
-- [x] **Rotación y acercamiento (20):** cámara orbital con el mouse e inercia, rueda para acercar y
-  alejar, teclado, giro automático y 7 vistas con vuelo suave entre ellas.
-- [x] **Materiales (5 × 5):** más de quince, cada uno con su textura y sus propios parámetros
-  (ver el catálogo).
-- [x] **Refracción (10):** el agua del lago, índice 1.33, con Fresnel: espejo vista de costado y
-  transparente vista de frente, y se ven los koi debajo. También la gota de rocío (1.33) y el cubo de
-  azúcar (1.55).
-- [x] **Reflexión (5):** ventanas, vitral, agua, el alfiler de Arrietty, los ojos del gato y, con lluvia,
-  todas las superficies mojadas.
-- [x] **Skybox (20):** cubemap de 6 caras de 256×256 por ambiente, generado por código al arrancar
-  (sol, cúmulos y bosque en el horizonte; cielo nublado que se ilumina con los relámpagos).
-- [x] **Sin librerías externas:** `[dependencies]` está vacío.
 
 ## Catálogo de materiales
 
@@ -115,7 +97,7 @@ reflectividad que gana una superficie que mira hacia arriba cuando llueve.
 | Tierra | Pasto y tierra mezclados | 1.0 | 0.04 (8) | — | — |
 | Pelaje de Niya | Atigrado con panza clara | 1.0 | 0.12 (12) | — | — |
 
-## Bajo el capó
+## Acerda de
 
 **Raytracing de Whitted.** Un rayo primario por píxel; en cada impacto, luz local con sombras más un
 rayo reflejado y uno refractado según el material (ley de Snell, Fresnel de Schlick y reflexión
