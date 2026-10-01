@@ -1,0 +1,13 @@
+[package]
+name = "arrietty_rt"
+version = "0.1.0"
+edition = "2021"
+
+# Sin dependencias externas: todo el raytracer (vectores, ruido, texturas,
+# materiales, camara, encoder de BMP) esta escrito usando unicamente
+# la libreria estandar de Rust.
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
